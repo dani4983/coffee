@@ -8,4 +8,95 @@ body{
   background-attachment:fixed;
   background-size:cover;
   height:500vh;
-  ont-family:'Pacifico', cursive}.navbar,ul li{background:rgba(0,0,0,0.6);font-weight:900}.navbar,ul li a{color:white}#sidebar{position:fixed;width:200px;height:100%;background:transparent;left:-200px;transition:all 500ms linear}#sidebar.active{left:0}#sidebar ul li{color:white;text-align:center;padding:15px 10px;list-style:none;border-bottom:1px solid rgba(100,100,100,0.3)}#sidebar .toggle-btn{position:absolute;left:230px;top:20px;cursor:pointer}#sidebar .toggle-btn span{display:block;width:40px;text-align:center;font-size:30px;border:1px solid #000}#sidebar ul li{font-weight:900}#inputPassword{background:transparent;color:white}.contactos{background:rgba(148,92,46,0.6)}footer{background:rgba(148,92,46,0.6);color:white}@media screen and (max-width: 768px){.toggle-btn{display:none}}@media screen and (max-width: 576px){background-repeat:repeat-y}
+  font-family:'Pacifico', cursive;
+}
+.navbar,ul li{
+  background:rgba(0,0,0,0.6);
+  font-weight:900;
+}
+.navbar,ul li a{
+  color:white;
+}
+.navbar-brand img{
+  width: 30%;
+}
+#sidebar{
+  position:fixed;
+  z-index: 1;
+  width:200px;
+  height:100%;
+  background:transparent;
+  left:-200px;
+  transition:all 500ms linear;
+}
+#sidebar.active{
+  left:0;
+}
+#sidebar ul li{
+  color:white;
+  text-align:center;
+  padding:15px 10px;
+  list-style:none;
+  border-bottom:1px solid rgba(100,100,100,0.3);
+}
+#sidebar .toggle-btn{
+  position:absolute;
+  left:230px;
+  top:20px;
+  z-index: 1;
+  cursor:pointer;
+}
+#sidebar .toggle-btn span{
+  display:block;
+  width:40px;
+  text-align:center;
+  font-size:30px;
+  border:1px solid #000;
+}
+#sidebar ul li{
+  font-weight:900;
+}
+#inputPassword{
+  background:transparent;
+  color:white;
+}
+.contactos{
+  background:rgba(148,92,46,0.6);
+}
+.slider{
+  margin: 30px 90px;
+}
+.carousel-control i{
+  color: rgba(148,92,46,0.9);
+}
+footer{
+  background:rgba(148,92,46,0.6);
+  color:white;
+}
+@media(max-width: 992px){
+  .slider{
+    margin: 30px 75px;
+  }
+  #sidebar{
+    top: 70px;
+  }
+}
+@media(max-width: 768px){
+  .toggle-btn{
+  }
+  .slider{
+    margin: 30px 0;
+  }
+}
+@media(max-width: 576px){
+  body{
+    background-repeat:repeat-y;
+  }
+  #sidebar{
+    position: absolute;
+    top: 0;
+   }
+  .slider{
+    margin: 30px 0;
+  }
+}
